@@ -16,15 +16,12 @@ while (( SECONDS < secs1 )); do
   sudo ifconfig wlp0s20f3 down
   sudo macchanger -r wlp0s20f3
   sudo ifconfig wlp0s20f3 up
+
   sleep 2
-  #ping -c 5 www.physicshelper.tk
-  wget https://physicshelper.github.io
+
+  ping -c 5 google.com
+  
   sleep 2
-  sudo rm index.html
-  #SECONDS2=0
-  #while (( SECONDS2 < secs2)); do
-  #  ping physicshelper.tk
-  #done
 
 done
 
